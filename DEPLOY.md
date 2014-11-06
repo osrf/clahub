@@ -27,6 +27,7 @@ Register for a new [GitHub application](https://github.com/settings/applications
 OAuth key/secret pair, and add it to the Heroku environment:
 
     heroku config:add GITHUB_KEY=aaa111bbb GITHUB_SECRET=ccc222ddd
+    heroku config:add GITHUB_LIMITED_KEY=ddd333ccc GITHUB_LIMITED_SECRET=bbb444aaa
     heroku restart
 
 If you have problems, try running `heroku logs`.
