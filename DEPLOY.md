@@ -43,6 +43,14 @@ redirect my-clahub.herokuapp.com to www.my-clahub.com):
 
 At your DNS provider, add a CNAME from www.my-clahub.com to my-clahub.herokuapp.com
 
+Authentication
+--------------
+
+OSRF's fork blocks access to the agreement-creation part of the application to prevent people external to OSRF from creating their own agreements. To configure HTTP basic authentication for the OSRF fork, type the following:
+
+    heroku config:add AUTH_CLAHUB_USERNAME=username AUTH_CLAHUB_PASSWORD=password
+
+At your DNS provider, add a CNAME from www.my-clahub.com to my-clahub.herokuapp.com
 
 HTTPS
 ------------------
