@@ -20,7 +20,8 @@ class Agreement < ActiveRecord::Base
       'name' => 'web',
       'config' => {
         'url' => "#{HOST}/repo_hook"
-      }
+      },
+      'events' => ['pull_request']
     }
 
     if repo_name != GithubRepos::ALL_REPOS
